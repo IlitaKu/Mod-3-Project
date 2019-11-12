@@ -6,18 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
- User.destroy_all
  Category.destroy_all
  Task.destroy_all
-user_a = User.create(name: 'Alexandro', email: 'someone@gmail.com')
-user_b = User.create(name: 'Don Xulio', email: 'tekila@gmail.com')
-user_c = User.create(name: 'Simpson', email: 'springfield@gmail.com')
-user_d = User.create(name: 'Cartman', email: 'sputh_park@gmail.com')
 
-category_a = Category.create(name: "to_do",  user: user_a)
-category_b = Category.create(name: "done",  user: user_b)
-category_c = Category.create(name: "doing",  user: user_c)
-category_d = Category.create(name: "to_do",  user: user_d)
+
+category_a = Category.create(name: "to_do",)
+category_b = Category.create(name: "done",)
+category_c = Category.create(name: "doing",)
+category_d = Category.create(name: "to_do",)
 
 task_a = Task.create(title: 'project', description: ' must be done till tomorrow', category: category_a)
 task_b = Task.create(title: 'work stuff', description: 'get some note pads', category: category_b)
