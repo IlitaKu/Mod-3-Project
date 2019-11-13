@@ -1,13 +1,14 @@
 class TasksController < ApplicationController
 
     def index
-        @tasks = Task.all
-        render({json: @tasks, status: :ok})
+      tasks = Task.all
+        render json: tasks.to_json(inlcude: [:category])
     end
 
     def show
-        @task = Task.find(params[:id])
-        render(json: @task, status: :ok)
+        task = Task.find(id: params[:id])
+        render json: task.to_json(inlcude: [:category], except: [:updated_at, :created_at])
+        render json: {id: task.id, title: task.title, description: task.description, category_id: task.category_id }
     end
 
      def create

@@ -1,13 +1,13 @@
 class CategoriesController < ApplicationController
 
     def index
-        @categories = Category.all
-        render({json: @categories, status: :ok})
+        categories = Category.all
+        render json: categories
     end
 
     def show
-        @category = Category.all
-        render(json: @category, status: :ok)
+        category = Category.find_by(id: params[:id])
+        render json: {id: category.id, name: category.name, task: category.tasks}
     end
 
     def create
