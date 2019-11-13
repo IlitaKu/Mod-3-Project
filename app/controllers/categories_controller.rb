@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
 
     def index
         categories = Category.all
-        render json: categories
+        render json: categories.to_json(include: [:tasks])
     end
 
     def show
