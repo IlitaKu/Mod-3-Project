@@ -13,9 +13,10 @@
 category_a = Category.create(name: "to_do",)
 category_b = Category.create(name: "done",)
 category_c = Category.create(name: "doing",)
-category_d = Category.create(name: "to_do",)
+category_d = Category.create(name: "to_do-now",)
 
 task_a = Task.create(title: 'project', description: ' must be done till tomorrow', category: category_a)
+task_a = Task.create(title: 'appointment', description: 'beauty session wednesday', category: category_a)
 task_b = Task.create(title: 'work stuff', description: 'get some note pads', category: category_b)
 task_c = Task.create(title: 'christmas pressents', description: 'buy presents for 1000 people', category: category_c)
 task_d = Task.create(title: 'workout session', description: 'yoga tuesday, box on thursday', category: category_d)
