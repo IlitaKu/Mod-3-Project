@@ -10,10 +10,10 @@
  Task.destroy_all
 
 
-category_a = Category.create(name: "to_do",)
-category_b = Category.create(name: "done",)
-category_c = Category.create(name: "doing",)
-category_d = Category.create(name: "to_do-now",)
+category_a = Category.create(name: "To Do",)
+category_b = Category.create(name: "Done",)
+category_c = Category.create(name: "Doing",)
+category_d = Category.create(name: "To Do Now",)
 
 task_a = Task.create(title: 'project', description: ' must be done till tomorrow', category: category_a)
 task_a = Task.create(title: 'appointment', description: 'beauty session wednesday', category: category_a)
