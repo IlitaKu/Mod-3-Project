@@ -1,24 +1,12 @@
-# README
+# README 
+# TodoList
+This is a simple single page application, which allows users to create and delete to do tasks.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Motivation
+The motivation behind this project is to demonstarte understanding and learnig of vanilla JavaSript.
 
-Things you may want to cover:
+# Project Demo
+https://youtu.be/FcKaS8ltblk
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# How to use
+User should clone the repo or fork the Mod-3-Project to their local environment. On one terminal enter command rails server to get backend running on the other server run open index.html. 
